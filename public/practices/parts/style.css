@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content"
+        "sidebar footer";
+}
+
+h2{
+    color: brown;
+    text-align: center;
+}
+
+.tasks{
+    margin: 50px 0px 50px 0px;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    background-color: #767676;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: sidebar;
+    width: 200px;
+    background-color: #444746;
+}
+
+.linkesSidbar{
+    margin-top: 110px;
+}
+
+.linkesSidbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 10px 20px;
+    background-color: brown;
+    color: wheat;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 60px;
+    transition: background-color 0.4s ease;
+}
+
+.linkesSidbar a:hover {
+    background-color: #EEEEEE;
+    color: brown;
+    border: 3px solid brown;
+}
+
+.content{
+    grid-area: content;
+    background-color: #EEEEEE;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #EEEEEE;
+}
+.footer hr{
+    border: 2px solid #767676 ;
+}
