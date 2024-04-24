@@ -9,7 +9,7 @@
 <body>
     <div class="form1">
         <h1>Personal Information Form</h1>
-        <form action="user_bio.php" method="get" target="_blank">
+        <form action="user_bio.php" method="POST" target="_blank">
 
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>

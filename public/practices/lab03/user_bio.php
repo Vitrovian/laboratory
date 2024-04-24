@@ -1,14 +1,14 @@
 <?php
-// Перевірка, чи були надіслані дані форми
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    // Отримання даних з форми
-    $name = $_GET["name"];
-    $age = $_GET["age"];
-    $gender = $_GET["gender"];
-    $email = $_GET["email"];
-    $bio = $_GET["bio"];
+// перевірка, чи були надіслані дані форми
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // отримання даних з форми
+    $name = $_POST["name"];
+    $age = $_POST["age"];
+    $gender = $_POST["gender"];
+    $email = $_POST["email"];
+    $bio = $_POST["bio"];
 
-    // Виведення даних на сторінці
+    // виведення даних на сторінці
     echo "<!DOCTYPE html>";
     echo "<html>";
     echo "<head><title>User Bio</title></head>";
