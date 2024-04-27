@@ -6,6 +6,8 @@
     <title>Ajax</title>
 
     <script src="scripts.js"></script>
+
+    <link rel="stylesheet" href="./style05.css">
 </head>
 <body>
     <h1>Contact form</h1>
